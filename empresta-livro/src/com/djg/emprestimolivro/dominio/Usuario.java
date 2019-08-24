@@ -7,10 +7,19 @@ public class Usuario {
     private String dataNascimento;
     private String endereco;
 
-    public Usuario(String nomeCompleto, String dataNascimento, String endereco) {
+    public Usuario(String codigoUsuario, String nomeCompleto, String dataNascimento, String endereco) {
+        this.codigoUsuario = codigoUsuario;
         this.nomeCompleto = nomeCompleto;
         this.dataNascimento = dataNascimento;
         this.endereco = endereco;
+    }
+
+    public String getCodigoUsuario() {
+        return codigoUsuario;
+    }
+
+    public void setCodigoUsuario(String codigoUsuario) {
+        this.codigoUsuario = codigoUsuario;
     }
 
     public String getNomeCompleto() {

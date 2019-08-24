@@ -1,14 +1,17 @@
 package com.djg.emprestimolivro.dominio;
 
+import java.time.LocalDate;
+
 public class Emprestimo {
 
     private String codigoSolicitacao;
-    private String usuarioSolicitante;
-    private  String livroSolicitado;
-    private String dataEmprestimo;
-    private String dataDevolucao;
+    private Usuario usuarioSolicitante;
+    private  Livro livroSolicitado;
+    private LocalDate dataEmprestimo;
+    private LocalDate dataDevolucao;
 
-    public Emprestimo(String codigoSolicitacao, String usuarioSolicitante, String livroSolicitado, String dataEmprestimo, String dataDevolucao) {
+    public Emprestimo(String codigoSolicitacao, Usuario usuarioSolicitante, Livro livroSolicitado, LocalDate dataEmprestimo, LocalDate dataDevolucao) {
+        super();
         this.codigoSolicitacao = codigoSolicitacao;
         this.usuarioSolicitante = usuarioSolicitante;
         this.livroSolicitado = livroSolicitado;
@@ -24,35 +27,35 @@ public class Emprestimo {
         this.codigoSolicitacao = codigoSolicitacao;
     }
 
-    public String getUsuarioSolicitante() {
+    public Usuario getUsuarioSolicitante() {
         return usuarioSolicitante;
     }
 
-    public void setUsuarioSolicitante(String usuarioSolicitante) {
+    public void setUsuarioSolicitante(Usuario usuarioSolicitante) {
         this.usuarioSolicitante = usuarioSolicitante;
     }
 
-    public String getLivroSolicitado() {
+    public Livro getLivroSolicitado() {
         return livroSolicitado;
     }
 
-    public void setLivroSolicitado(String livroSolicitado) {
+    public void setLivroSolicitado(Livro livroSolicitado) {
         this.livroSolicitado = livroSolicitado;
     }
 
-    public String getDataEmprestimo() {
+    public LocalDate getDataEmprestimo() {
         return dataEmprestimo;
     }
 
-    public void setDataEmprestimo(String dataEmprestimo) {
+    public void setDataEmprestimo(LocalDate dataEmprestimo) {
         this.dataEmprestimo = dataEmprestimo;
     }
 
-    public String getDataDevolucao() {
+    public LocalDate getDataDevolucao() {
         return dataDevolucao;
     }
 
-    public void setDataDevolucao(String dataDevolucao) {
+    public void setDataDevolucao(LocalDate dataDevolucao) {
         this.dataDevolucao = dataDevolucao;
     }
 
